@@ -1,0 +1,111 @@
+
+//Practice:
+
+1. You have declared but you didn't assign any value. What happens when you print out this variable?
+        var person; -> undefined
+
+2. Declare variables with numbers, special chars at the start. Do you get any errors ?
+        var number = $5; -> $5 is not defined
+
+3. Declare and define a variable that stores your name. Using that variable, construct a new variable
+that represents a greeting by concatenating "Hello" in front of your name       
+
+        var x = "pavithra";
+        var y = "Hello";
+        console.log(y+x)
+                Ans: Hellopavithra
+
+4. We've seen that variables can store strings and numbers. We've also seen that when we have two
+strings the +operator means concatenation, whereas when we have two number variables it
+represents addition. What happens when we mix and match number and string variables? Give it a try.
+
+        var tweet = "hello world!";
+        var count = 0;
+
+        count = count + 10;
+        tweet = tweet + count;
+
+        // what is the value of tweet and count now?
+                Ans: 
+                    tweet = hello world!10
+                    count = 10
+        
+        count = count * 10;
+        tweet = count + tweet;
+
+        // what is the value of tweet and count now?
+                Ans: 
+                     tweet = 100hello world!10
+                     count = 100
+        
+        count = count * 100;
+        tweet = tweet + ". this is another sentence.";
+        
+        // what is the value of tweet and count now?
+                Ans:
+                    tweet = "100hello world!10. this is another sentence."
+                    count = 10000
+
+
+
+1.1. Using the Chrome JavaScript console, practice with the typeof operator. 
+What are the types of the following values? 
+
+        typeof true;     -> "boolean"
+        typeof "true";   -> "string"
+        typeof 1;        -> "number"
+        typeof "1";      -> "string"
+        typeof "one";    -> "string"
+
+
+1.2. Using the Chrome JavaScript console, practice with string methods. 
+If you type a string and then the dot operator, and then wait a moment, 
+you'll see that Chrome's auto-complete box will appear. 
+You can use the up and down arrows to cycle through all the methods available on the string object. 
+Apply a few of those methods and see if you can understand what they do. 
+
+        var person = "pavithra";
+        person.length
+        8
+        
+        person.bold()
+        "<b>pavithra</b>"
+        
+        person.big()
+        "<big>pavithra</big>"
+        
+        person.anchor()
+        "<a name="undefined">pavithra</a>"
+        
+        person.charAt(3)
+        "i"
+        
+        person.concat(" Ramamoorthy")
+        "pavithra Ramamoorthy"
+
+        person.endsWith("")
+        true
+        
+        person.fixed()
+        "<tt>pavithra</tt>"
+        
+        person.fontcolor("blue")
+        "<font color="blue">pavithra</font>"
+        
+        person.fontsize(18)
+        "<font size="18">pavithra</font>"
+        
+        person.includes("pavi")
+        true
+        
+        person.includes("pavi")
+        true
+        
+        person.toLocaleLowerCase()
+        "pavithra"
+        
+        person.toLocaleUpperCase()
+        "PAVITHRA"
+        
+        person.valueOf()
+        "pavithra"
